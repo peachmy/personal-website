@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #2d3c3a;
     color: white;
     text-align: center;
     padding: 20px;
@@ -34,6 +34,22 @@ main {
     max-width: 500px;
     text-align: center;
     word-wrap: break-word;
+    color: #c6c8c5;
+    text-shadow: 2px 2px 5px #333, -2px -2px 5px #333, 2px -2px 5px #333, -2px 2px 5px #333;
+}
+
+.bio h2 {
+    color: #2d3c3a;
+    text-shadow: none;
+}
+
+#quote {
+    color: #c6c8c5;
+    text-shadow: 2px 2px 5px #333, -2px -2px 5px #333, 2px -2px 5px #333, -2px 2px 5px #333;
+}
+
+#quote-section h3 {
+    color: #2d3c3a;
 }
 
 img {
@@ -48,8 +64,8 @@ img:hover {
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #2d3c3a;
+    color: #c6c8c5;
     text-align: center;
     padding: 10px;
     width: 100%;
