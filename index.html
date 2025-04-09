@@ -28,11 +28,29 @@
                 <p>Todo</p>
             </details>
         </section>
+
+        <section id="quote-section">
+            <h3>Daily Quote Sharing</h3>
+            <p id="quote">Loading...</p>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Emma Tao. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        fetch('http://api.quotable.io/random')
+            .then(response => response.json())
+            .then(data => {
+                const quoteElement = document.getElementById('quote');
+                quoteElement.textContent = `"${data.content}" - ${data.author}`;
+            })
+            .catch(error => {
+                const quoteElement = document.getElementById('quote');
+                quoteElement.textContent = 'Failed to load a quote. Please try again later.';
+            });
+    </script>
 </body>
 
 </html>
